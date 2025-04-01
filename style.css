@@ -1,0 +1,437 @@
+/* Reset CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-bar.scrolled {
+    background-color: #9c4e97;
+    padding: 15px 0;
+}
+
+.nav-btn {
+    background-color: #e1a5d5;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rosybrown;
+}
+
+.nav-btn:hover {
+    background-color: #edb3f4;
+    transform: scale(1.1);
+}
+
+.nav-bar a.active {
+    color: #ffffff; /* Cambiar el color de los links activos */
+}
+
+.nav-bar a {
+    font-size: 18px;
+}
+
+.nav-bar a.active {
+    color: #9c4e97;
+    text-decoration: underline;
+}
+
+/* Estilos generales para el header */
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    color: #5c3d6d;
+}
+
+header p {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+/* Estilos para los botones de descarga */
+.header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.download-btn {
+    background-color: #f2b2e1;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.download-btn:hover {
+    background-color: #eca8e2;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Sección de habilidades */
+#skills {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#skills h2 {
+    font-size: 2.5em;
+    color: #5c3d6d;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Contenedor de las tarjetas de habilidades */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que las tarjetas se acomoden en varias filas */
+    justify-content: space-evenly; /* Espaciado entre las tarjetas */
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+/* Tarjetas de habilidades */
+.skill-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Ancho fijo para todas las tarjetas */
+    max-width: 250px; /* Máximo ancho de la tarjeta */
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 200px; /* Flexibilidad para ajustarse dentro del contenedor */
+    min-height: 300px; /* Altura mínima para las tarjetas */
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en una columna */
+    justify-content: space-between; /* Asegura que el contenido esté bien distribuido */
+}
+
+/* Efecto de expansión al pasar el mouse */
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+/* Título de cada tarjeta */
+.skill-card h3 {
+    font-size: 1.8em;
+    color: #5c3d6d;
+    margin-top: 10px;
+}
+
+/* Icono de cada habilidad */
+.skill-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra de progreso */
+.progress-bar {
+    background-color: #f2b2e1;
+    border-radius: 8px;
+    height: 10px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #9c4e97;
+    height: 100%;
+    border-radius: 8px;
+    transition: width 0.3s ease;
+}
+
+
+
+
+
+/* Animación de desvanecimiento */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 30px 20px;
+    min-height: 80vh;
+    text-align: center;
+    background-color: #ffffff;
+    margin-top: 80px;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* Hacemos que la animación sea más visible */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fuentes de los títulos y párrafos (todas las fuentes de tamaño similar) */
+h1, h2, h3, h4, p {
+    font-size: 1.5rem; /* Fuente de tamaño consistente */
+    color: #5c3d6d;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección sobre mí */
+#about h2, #home h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#about p, #home p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Sección Proyectos */
+.proyecto {
+    background-color: #f9f9f9;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.proyecto h3 {
+    color: #5c3d6d;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.proyecto p {
+    color: #777;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.proyecto a {
+    color: #5c3d6d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.proyecto a:hover {
+    color: #5c3d6d;
+}
+
+/* Estilo para la foto de perfil */
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.foto-perfil {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #555;
+    max-width: 600px;
+}
+
+/* Efecto al hacer scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    color: #5c3d6d;
+    margin-bottom: 20px;
+}
+
+/* Información de contacto */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item i {
+    font-size: 1.5em;
+    color: #9c4e97;
+}
+
+.contact-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Formulario de contacto */
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-container h3 {
+    font-size: 2em;
+    color: #5c3d6d;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1.2em;
+    color: #5c3d6d;
+}
+
+form input,
+form textarea {
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid #9c4e97;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #5c3d6d;
+    color: white;
+    padding: 15px 25px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #9c4e97;
+}
+
+
+form button:hover {
+    background-color: #9c4e97;
+}
+
+
+form button:hover {
+    background-color: #9c4e97;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body> 
+    <!-- Barra de navegación -->
+    <header>
+      <nav class="nav-bar">
+        <a href="#home" class="nav-btn">Inicio</a>
+        <a href="#about" class="nav-btn">Sobre mí</a>
+        <a href="#skills" class="nav-btn">Habilidades</a>
+        <a href="#projects" class="nav-btn">Proyectos</a>
+        <a href="#contact" class="nav-btn">Contacto</a>
+      </nav>
+
+      <!-- Contenedor para la foto y el nombre -->
+      <div class="perfil">
+        <!-- Foto de perfil -->
+        <img
+          src="images/fotoperfil.png"
+          alt="Foto de Karen Jeanine Rivera Gómez"
+          class="foto-perfil"
+        />
+
+        <!-- Nombre y descripción -->
+        <div>
+          <h1><strong>Karen Jeanine Rivera Gómez</strong></h1>
+          <p>
+            <strong
+              >Full Stack Developer | Angular | TypeScript | Node.js |
+              MSSQL</strong
+            >
+          </p>
+        </div>
+      </div>
+
+      <!-- Botón para descargar CV -->
+      <div class="header">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1L4xMFWdRXON3vR-uu0auuQxlalKjFtX7"
+          download
+          class="download-btn"
+          >Descargar CV</a
+        >
+      </div>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="home">
+      <h2>Inicio</h2>
+      <h2>Bienvenido a mi portafolio</h2>
+      <p>
+        ✨ Bienvenido a mi espacio digital. Aquí encontrarás un poco de mí, de
+        mi pasión por el desarrollo y del amor por crear experiencias
+        funcionales y atractivas. Soy Karen, una desarrolladora Full Stack
+        enfocada en escribir código limpio y bien estructurado, siempre buscando
+        aprender y mejorar. Echa un vistazo a mis proyectos y acompáñame en este
+        viaje de aprendizaje y crecimiento. 🚀
+      </p>
+    </section>
+
+    <!-- Sección Sobre mí -->
+    <section id="about">
+      <h2>Sobre mí</h2>
+      <p>
+        ¡Holaaaaa! Soy Karen Jeanine Rivera Gomez, tengo 21 años y actualmente
+        estudio Ingenieria en sistemas en Universidad Central de Nicaragua. Soy
+        Full Stack Developer y me encanta crear experiencias visuales únicas,
+        combinando diseño y tecnología. Mi cabeza es un caos creativo (del
+        bueno). Siempre estoy imaginando cosas y buscando formas de hacerlas
+        realidad, ya sea con código, diseño o lo que tenga a mano. Me encanta
+        aprender, probar nuevas herramientas y encontrar inspiración en los
+        lugares más inesperados. Cuando no estoy en modo "creador/a",
+        probablemente me encuentres descubriendo música, probando café en todas
+        partes, disfrutando de una buena gaseosa o un café helado, o simplemente
+        explorando nuevas bebidas que me hagan sonreír. Ah, y si ves un gatito
+        por aquí, no te sorprendas, son mis asistentes oficiales. 🐱 Si has
+        llegado hasta aquí, bienvenido/a a mi mundo. ¡Espero que disfrutes
+        explorando mi portafolio tanto como yo disfruté creándolo! <3
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Mis Habilidades</h2>
+      <div class="skills-container">
+        <!-- Tarjeta de JavaScript -->
+        <div class="skill-card">
+          <img src="images/logoJs.png" alt="JavaScript" class="skill-icon" />
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <!-- Tarjeta de TypeScript -->
+        <div class="skill-card">
+          <img src="images/logoTs.png" alt="TypeScript" class="skill-icon" />
+          <h3>TypeScript</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%"></div>
+          </div>
+        </div>
+        <!-- Tarjeta de Angular -->
+        <div class="skill-card">
+          <img src="images/logoAngular.png" alt="Angular" class="skill-icon" />
+          <h3>Angular</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%"></div>
+          </div>
+        </div>
+        <!-- Tarjeta de Node.js -->
+        <div class="skill-card">
+          <img src="images/node.js.png" alt="Node.js" class="skill-icon" />
+          <h3>Node.js</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+   <!-- Tarjeta de SQL Server -->
+   <div class="skill-card">
+    <img src="images/sql.png" alt="SQL Server" class="skill-icon" />
+    <h3>SQL Server</h3>
+    <div class="progress-bar">
+      <div class="progress" style="width: 75%"></div>
+    </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+      <h2>Proyectos</h2>
+      <div class="proyecto">
+        <h3>E-Commerce para Tienda de Ropa Online (En Desarrollo)</h3>
+        <p>
+          Actualmente estoy desarrollando un <strong>e-commerce</strong> que
+          permitirá al cliente llevar control total de su inventario.
+        </p>
+        <p>
+          <strong>Tecnologías usadas:</strong> Angular, TypeScript, Node.js,
+          MSSQL
+        </p>
+        <p>
+          <strong>Estado actual:</strong> Trabajando en la estructura del
+          backend con Node.js y Express.<br />
+          <strong>Próximos pasos:</strong> Implementar la interfaz con Angular y
+          conectar la base de datos MSSQL.
+        </p>
+        <a href="https://github.com/Jeanin23/tienda-en-linea"
+          >🔗 Próximamente en GitHub</a
+        >
+      </div>
+
+      <div class="proyecto">
+        <h3>Migración de Proyecto de JavaScript a TypeScript con Node.js</h3>
+        <p>
+          También trabajé en la migración de un proyecto antiguo desarrollado en
+          <strong>JavaScript puro</strong> a <strong>TypeScript</strong> con
+          Node.js y Express.
+        </p>
+        <p><strong>Tecnologías usadas:</strong> TypeScript, Node.js, Express</p>
+        <p>
+          <strong>Desafíos:</strong> Refactorizar el código sin afectar el
+          funcionamiento del sistema en producción.<br />
+          <strong>Solución:</strong> Reescribí los módulos en TypeScript,
+          asegurando compatibilidad y optimizando la escalabilidad del código.
+        </p>
+      </div>
+
+      <div class="proyecto">
+        <h3>Creacion de modulo en proyecto de recibos</h3>
+        <p>
+          Durante mi experiencia en una empresa del sector industrial, participé
+          en el desarrollo de un <strong>módulo de recibos</strong> que optimizó
+          el proceso de facturación digital.
+        </p>
+        <p>
+          <strong>Tecnologías usadas:</strong> Angular, TypeScript, Node.js,
+          MSSQL
+        </p>
+        <p>
+          <strong>Desafíos:</strong> Integrar el nuevo módulo con el sistema
+          actual sin interrumpir operaciones.<br />
+          <strong>Solución:</strong> Diseñé una API eficiente y una interfaz
+          intuitiva, reduciendo los tiempos de procesamiento en un 30%.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contact">
+      <h2>Contacto</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <p><strong>Email:</strong> karenriveragomewz100@gmail.com</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p><strong>Ubicación:</strong> Managua, Nicaragua</p>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <p><strong>Número:</strong> +505 8544 7677</p>
+        </div>
+      </div>
+      <p> Estoy disponible a nuevas oportunidades. Dejamé un mesaje</p>
+
+      <!-- Formulario de contacto -->
+      <div class="form-container">
+        <form
+          action="mailto:karen@ejemplo.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Nombre:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Tu nombre"
+            required
+          />
+
+          <label for="email">Correo:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Tu correo"
+            required
+          />
+
+          <label for="subject">Asunto:</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="El asunto"
+            required
+          />
+
+          <label for="message">Mensaje:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Escribe tu mensaje aquí..."
+            required
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Incluye FontAwesome en tu HTML -->
+    <head>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      />
+    </head>
+
+    <footer>
+      <p>
+        © 2025 Karen Jeanine Rivera Gómez | Desarrolladora Full Stack. Todos los
+        derechos reservados.
+      </p>
+    </footer>
+  </body>
+</html>
