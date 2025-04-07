@@ -283,12 +283,17 @@ p {
     color: #5c3d6d;
 }
 
+body {
+    padding-top: 70px; /* Ajusta según la altura de tu navbar */
+}
+
+
 /* Estilo para la foto de perfil */
 .perfil {
     display: flex;
     align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
+    gap: 10px;
+    margin-bottom: 70px;
     justify-content: center;
 }
 
@@ -296,9 +301,9 @@ p {
     width: 250px;
     height: 250px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 80%;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 #about {
